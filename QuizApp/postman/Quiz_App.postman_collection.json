@@ -1,0 +1,137 @@
+{
+  "info": {
+    "_postman_id": "8c4a4b46-f26c-4a15-adc6-0dea8d01dedc",
+    "name": "Quiz_App",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53857545",
+    "_collection_link": "https://go.postman.co/collection/53857545-8c4a4b46-f26c-4a15-adc6-0dea8d01dedc?source=collection_link"
+  }, 
+  "item": [
+    {
+      "name": "add_Question",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"question_title\": \"What is the output of the following Java code?\\n\\nint a = 10;\\nint b = 20;\\nSystem.out.println(a + b + \\\"Java\\\" + a + b);\",\r\n  \"option1\": \"30Java1020\",\r\n  \"option2\": \"30Java30\",\r\n  \"option3\": \"Java102030\",\r\n  \"option4\": \"1020Java30\",\r\n  \"right_answer\": \"30Java1020\",\r\n  \"category\": \"Java\",\r\n  \"difficultylevel\": \"Easy\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/Question/addQuestion",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "Question",
+            "addQuestion"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getallQuestion",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "getByCategory",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "createQuiz",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "getQuiz",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/Quiz/get/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "Quiz",
+            "get",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "submitQuiz",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"id\" : 2,\r\n        \"response\" : \"Java Virtual Machine\"\r\n    },\r\n    {\r\n        \"id\" : 10,\r\n        \"response\" : \"Same method name different parameters\"\r\n    },\r\n    {\r\n        \"id\" : 1,\r\n        \"response\" : \"30Java1020\"\r\n    },\r\n    {\r\n        \"id\" : 7,\r\n        \"response\" : \"abstract\"\r\n    },\r\n    {\r\n        \"id\" : 5,\r\n        \"response\" : \"Hiding data\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/Quiz/submit/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "Quiz",
+            "submit",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deleteQuestiobByid",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/questions/31",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "questions",
+            "31"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
