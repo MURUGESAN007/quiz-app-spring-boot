@@ -177,11 +177,19 @@ mvn spring-boot:run
 
 ## 🔮 Future Enhancements
 
-* 🔐 Authentication (JWT)
-* 👨‍🏫 Role-based access (Teacher / Student)
-* 🏆 Leaderboard system
-* ⏱️ Timed quizzes
-* 🐳 Docker support
+* 🧩 Migrate monolithic architecture to Microservices
+* 🌐 API Gateway implementation for centralized routing
+* 🔍 Service Discovery using Eureka Server
+* 🔗 Inter-service communication using OpenFeign
+* ⚙️ Centralized configuration management
+* 🔐 JWT Authentication & Authorization
+* 👨‍🏫 Role-based access control (Admin / Teacher / Student)
+* 📊 Distributed monitoring and health checks
+* 🐳 Docker containerization for all services
+* ☸️ Deployment orchestration with Kubernetes
+* 🏆 Leaderboard & performance analytics service
+* ⏱️ Timed quiz scheduling service
+* 📩 Notification service for quiz updates
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 
